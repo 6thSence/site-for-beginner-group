@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'FontAwesom';
+    src: url('FontAwesome/FontAwesome.otf') format('otf'),
+url('FontAwesome/fontawesome-webfont.ttf') format('ttf');
+    }
+
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('FiraSans/FiraSans-Bold.ttf');
+    }
+
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: url('FiraSans/FiraSans-Light.ttf');
+    }
+
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('FiraSans/FiraSans-Medium.ttf');
+    }
+
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('FiraSans/FiraSans-Regular.ttf');
+    }
+
+
