@@ -1,0 +1,70 @@
+.footer {
+    margin-top: 50px;
+    height: 50px;
+    background: #414141;
+    color: #9c9c9c;
+    }
+
+    .footer__wrap {
+        margin: auto;
+        width: 960px;
+        height: 100%;
+        }
+
+        .footer__copyright {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 50px;
+            }
+
+        .footer__socials {
+            display: inline-block;
+            float: right;
+            box-sizing: border-box;
+            margin: 0;
+            padding-top: 10px;
+            height: 100%;
+            vertical-align: middle;
+            }
+
+        .footer__social {
+            display: inline-block;
+            margin-right: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            cursor: pointer;
+            }
+
+        .footer__social._fb {
+            background: #9c9c9c url('./assets/socials/fb.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;
+            }
+        .footer__social._fb:hover {
+            background: #5d99c3 url('./assets/socials/fb.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;
+            }
+
+        .footer__social._vk {
+            background: #9c9c9c url('./assets/socials/vk.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;
+            }
+        .footer__social._vk:hover {
+            background: #5d99c3 url('./assets/socials/vk.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;
+            }
+
+        .footer__social._tw {
+            background: #9c9c9c url('./assets/socials/tw.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;
+            }
+        .footer__social._tw:hover {
+            background: #5d99c3 url('./assets/socials/tw.svg') center no-repeat;
+            background-size: 10px;
+            transition: background ease-in .3s;

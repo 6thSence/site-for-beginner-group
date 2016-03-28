@@ -1,328 +1,46 @@
-html, body {
-    height: 100%;
+.content__photo {
+    display: inline-block;
+    margin-right: 50px;
+    width: 220px;
+    height: 220px;
+    border: solid 5px #fff;
+    border-radius: 50%;
+    background: url('assets/photo_big.png') center no-repeat;
+    background-size: 220px;
+    vertical-align: top;
     }
 
-.layout {
-    margin: 0;
-    padding: 0;
-    background: #f6f6f6;
-    font-family: 'Open Sans';
+.content__about {
+    display: inline-block;
+    width: 390px;
+    vertical-align: top;
     }
 
-    .wrap {
-        min-height: 650px;
-        height: 100%;
-        }
-    .wrap:after {
-        width: 100%;
-        height: 50px;
-        contet: '';
+    .content__text {
+        margin-bottom: 50px;
         }
 
-    .header {
-        margin-bottom: 30px;
-        width: 100%;
-        height: 80px;
-        background: #ffffff;
-        box-shadow: 0 0 13px -5px;
+    .content__download-button {
+        position: absolute;
+        right: 0;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 30px;
+        border: solid 2px;
+        border-radius: 20px;
+        background: url('assets/download.svg') 10px 50% no-repeat;
+        background-size: 15px;
+        color: #e85f61;
+        text-decoration: none;
+        transition: color ease-in-out .3s,
+            background ease-in-out .3s,
+            border ease-in-out .3s;
         }
-
-        .header__wrap {
-            position: relative;
-            box-sizing: border-box;
-            margin: auto;
-            padding-top: 5px;
-            padding-right: 40px;
-            width: 960px;
-            height: 100%;
-            }
-
-        .header__photo {
-            display: inline-block;
-            margin-right: 10px;
-            width: 60px;
-            height: 60px;
-            border: solid 3px #bfbfbf;
-            border-radius: 50%;
-            background: url('./assets/photo.png') center no-repeat;
-            background-size: 60px;
-            vertical-align: middle;
-            }
-
-        .header__name {
-            padding: 0;
-            vertical-align: middle;
-            line-height: 60px;
-            }
-
-        .header__button-wrap {
-            display: inline-block;
-            float: right;
-            box-sizing: border-box;
-            padding-top: 20px;
-            height: 100%;
-            vertical-align: middle;
-            }
-
-        .header__contacts-button {
-            border-bottom: 1px dashed;
-            color: #33c1e3;
-            cursor: pointer;
-            -webkit-user-select: none;
-            }
-
-        .header__contacts-button:hover, .header__contacts-button._active {
-            color: #e96667;
-            }
-
-        .header__contacts {
-            position: absolute;
-            top: 70%;
-            right: 0;
-            z-index: 1;
-            padding: 0;
-            width: 190px;
-            border: solid 1px #dedede;
-            border-radius: 5px;
-            background: #fff;
-            box-shadow: 0 0 10px -5px;
-            list-style: none;
-            }
-
-        .header__contacts._hidden {
-            display: none;
-            }
-
-        .header__contact {
-            position: relative;
-            display: block;
-            padding-left: 40px;
-            border-bottom: solid 1px #dedede;
-            line-height: 45px;
-            }
-        .header__contact:first-child:before {
-            position: absolute;
-            left: 50%;
-            border: 10px solid transparent;
-            border-bottom: 10px solid #dedede;
-            content: "";
-            transform: translate(-50%,-100%);
-            }
-        .header__contact:first-child:after {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            border: 9px solid transparent;
-            border-bottom: 9px solid #fff;
-            content: "";
-            transform: translate(-50%,-100%);
-            }
-
-        .header__contact:last-child {
-            border: none;
-            }
-
-        .header__link {
-            color: #414141;
-            text-decoration: none;
-            cursor: pointer;
-            transition: color ease-in .1s;
-            }
-
-        .header__link:hover {
-            color: #33c1e3;
-            transition: color ease-in .1s;
-            }
-
-        .header__contact._email {
-            background: url('assets/web.svg') 10px 50% no-repeat;
-            background-size: 20px;
-            }
-
-        .header__contact._tell {
-            background: url('assets/telephone.svg') 10px 50% no-repeat;
-            background-size: 20px;
-            }
-
-        .header__contact._skype {
-            background: url('assets/sign.svg') 10px 50% no-repeat;
-            background-size: 20px;
-            }
-
-    .content {
-        position: relative;
-        margin: auto;
-        width: 960px;
+    .content__download-button:hover {
+        border: solid 2px #fff;
+        background: #fff url('assets/download.svg') 10px 50% no-repeat;
+        background-size: 15px;
+        transition: color ease-in-out .3s,
+            background ease-in-out .3s,
+            border ease-in-out .3s;
         }
-
-        .aside-menu {
-            display: inline-block;
-            margin-right: 50px;
-            width: 220px;
-            vertical-align: top;
-            text-align: center;
-            }
-
-            .aside-menu__link {
-                position: relative;
-                display: inline-block;
-                box-sizing: border-box;
-                padding-right: 20px;
-                padding-left: 40px;
-                width: 100%;
-                color: #414141;
-                vertical-align: middle;
-                text-decoration: none;
-                font-weight: 400;
-                line-height: 45px;
-                transition: color ease-in .3s;
-                }
-            .aside-menu__link._active, .aside-menu__link:hover {
-                color: #33c1e3;
-                transition: color ease-in .3s;
-                }
-
-            .aside-menu__link:hover:after, .aside-menu__link._active:after {
-                position: absolute;
-                right: 0;
-                display: inline-block;
-                width: 5px;
-                height: 45px;
-                background: #33c1e3;
-                content: '';
-                vertical-align: middle;
-                }
-
-            .aside-menu__link._about {
-                background: url('assets/people.svg') 10px 50% no-repeat;
-                background-size: 20px;
-                }
-
-            .aside-menu__link._career {
-                background: url('assets/transport.svg') 10px 50% no-repeat;
-                background-size: 20px;
-                }
-
-            .aside-menu__link._portfolio {
-                background: url('assets/travel.svg') 10px 50% no-repeat;
-                background-size: 20px;
-                }
-
-        .content__photo {
-            display: inline-block;
-            margin-right: 50px;
-            width: 220px;
-            height: 220px;
-            border: solid 5px #fff;
-            border-radius: 50%;
-            background: url('assets/photo_big.png') center no-repeat;
-            background-size: 220px;
-            vertical-align: top;
-            }
-
-        .content__about {
-            display: inline-block;
-            width: 390px;
-            vertical-align: top;
-            }
-
-        .content__text {
-            margin-bottom: 50px;
-            }
-
-        .content__download-button {
-            position: absolute;
-            right: 0;
-            padding: 5px;
-            padding-right: 10px;
-            padding-left: 30px;
-            border: solid 2px;
-            border-radius: 20px;
-            background: url('assets/download.svg') 10px 50% no-repeat;
-            background-size: 15px;
-            color: #e85f61;
-            text-decoration: none;
-            transition: color ease-in-out .3s,
-                background ease-in-out .3s,
-                border ease-in-out .3s;
-            }
-        .content__download-button:hover {
-            border: solid 2px #fff;
-            background: #fff url('assets/download.svg') 10px 50% no-repeat;
-            background-size: 15px;
-            transition: color ease-in-out .3s,
-                background ease-in-out .3s,
-                border ease-in-out .3s;
-            }
-
-    .footer {
-        margin-top: -50px;
-        height: 50px;
-        background: #414141;
-        color: #9c9c9c;
-        }
-
-        .footer__wrap {
-            margin: auto;
-            width: 960px;
-            height: 100%;
-            }
-
-        .footer__copyright {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 50px;
-            }
-
-        .footer__socials {
-            display: inline-block;
-            float: right;
-            box-sizing: border-box;
-            margin: 0;
-            padding-top: 10px;
-            height: 100%;
-            vertical-align: middle;
-            }
-
-        .footer__social {
-            display: inline-block;
-            margin-right: 5px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            vertical-align: middle;
-            cursor: pointer;
-            }
-
-        .footer__social._fb {
-            background: #9c9c9c url('assets/socials/fb.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
-        .footer__social._fb:hover {
-            background: #5d99c3 url('assets/socials/fb.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
-
-        .footer__social._vk {
-            background: #9c9c9c url('assets/socials/vk.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
-        .footer__social._vk:hover {
-            background: #5d99c3 url('assets/socials/vk.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
-
-        .footer__social._tw {
-            background: #9c9c9c url('assets/socials/tw.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
-        .footer__social._tw:hover {
-            background: #5d99c3 url('assets/socials/tw.svg') center no-repeat;
-            background-size: 10px;
-            transition: background ease-in .3s;
-            }
